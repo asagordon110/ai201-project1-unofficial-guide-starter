@@ -9,14 +9,14 @@
 
 ## Domain
 
-<!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
+My domain is an unofficial UTSA CS student guide. The system will help students search student-generated advice about CS classes, professors, studying, campus resources, and course difficulty. This knowledge is valuable because official UTSA pages describe course requirements, but they do not explain what students actually experience.
+
 
 ---
 
 ## Documents
 
-<!-- List your specific sources: URLs, subreddit names, forum threads, or file descriptions.
-     Aim for at least 10 sources that together cover different subtopics or perspectives within your domain. -->
+I will collect at least 10 text documents from student-generated or student-centered sources, including professor reviews, Reddit discussions, course advice posts, and personal notes about CS classes.
 
 | # | Source | Description | URL or location |
 |---|--------|-------------|-----------------|
@@ -35,10 +35,7 @@
 
 ## Chunking Strategy
 
-<!-- How will you split documents into chunks?
-     State your chunk size (in tokens or characters), overlap size, and explain why those
-     numbers fit the structure of your documents.
-     A review-heavy corpus warrants different chunking than a long FAQ. -->
+I will chunk documents by paragraph where possible, then group nearby paragraphs until each chunk is around 500–800 characters. I will use about 100 characters of overlap so that advice split between paragraphs is not lost. This fits my documents because student reviews are usually short and opinion-based, so chunks should stay focused on one professor, course, or piece of advice.
 
 **Chunk size:**
 
@@ -50,11 +47,7 @@
 
 ## Retrieval Approach
 
-<!-- Which embedding model are you using (e.g., all-MiniLM-L6-v2 via sentence-transformers)?
-     How many chunks will you retrieve per query (top-k)?
-     If you were deploying this for real users and cost wasn't a constraint, what tradeoffs
-     would you weigh in choosing a different embedding model — context length, multilingual
-     support, accuracy on domain-specific text, latency? -->
+I will use sentence-transformers with all-MiniLM-L6-v2 for embeddings and ChromaDB as the vector store. I will retrieve the top 4 or 5 chunks for each query. If this were a production system, I would compare embedding models based on accuracy, speed, cost, context length, and ability to handle student slang or informal language.
 
 **Embedding model:**
 
@@ -71,13 +64,14 @@
      is right or wrong. "What are good dining halls?" is too vague.
      "What do students say about wait times at [dining hall name] during lunch?" is testable. -->
 
-| # | Question | Expected answer |
-|---|----------|-----------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| # | Question                                             | Expected answer |
+|---|----------|-------------------------------------------|
+| 1 |  Which CS courses do students describe as difficult? | The system should identify specific courses mentioned in the documents and explain why students found them difficult.
+|
+| 2 | What do students say about preparing for exams?      | The system should summarize student advice about studying, reviewing lecture notes, practice problems, or attending class. |
+| 3 | Which professors are described as helpful?           | The system should name professors only if they appear in the documents and cite the source. |
+| 4 | What advice do students give to new CS majors?       | The system should summarize advice from the collected student sources. |
+| 5 | What campus resources do students recommend?         | The system should mention only resources found in the documents. |
 
 ---
 
@@ -87,9 +81,9 @@
      Consider: noisy or inconsistent documents, missing source attribution, off-topic
      retrieval, chunks that split key information across boundaries. -->
 
-1.
+1. One challenge is that student-generated content may be noisy, informal, or inconsistent. 
 
-2.
+2. Another challenge is that chunks may accidentally split useful context, causing retrieval to return incomplete answers.
 
 ---
 
@@ -101,6 +95,17 @@
      You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
      You'll use this diagram as context when prompting AI tools to implement each stage. -->
 
+
+     ## Architecture
+
+```mermaid
+flowchart LR
+    A[Document Ingestion<br>Local TXT files] --> B[Chunking<br>Paragraph-based chunks]
+    B --> C[Embedding<br>all-MiniLM-L6-v2]
+    C --> D[Vector Store<br>ChromaDB]
+    D --> E[Retrieval<br>Top-k relevant chunks]
+    E --> F[Generation<br>Groq Llama 3.3 70B]
+
 ---
 
 ## AI Tool Plan
@@ -111,9 +116,7 @@
      - What you expect it to produce
      - How you'll verify the output matches your spec
 
-     "I'll use AI to help me code" is not a plan.
-     "I'll give Claude my Chunking Strategy section and ask it to implement chunk_text()
-     with my specified chunk size and overlap" is a plan. -->
+     I will use ChatGPT to help implement the document ingestion and chunking functions based on my chunking strategy. I will also use ChatGPT and Claude to help debug the ChromaDB retrieval code and improve the grounded response prompt, but I will review and edit the code myself.
 
 **Milestone 3 — Ingestion and chunking:**
 
