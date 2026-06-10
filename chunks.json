@@ -1,1 +1,134 @@
-[]
+[
+  {
+    "id": "utsa_campus_resources_1_0",
+    "source": "utsa_campus_resources_1.txt",
+    "chunk_index": 0,
+    "text": "Source: Personal UTSA Campus Resource Notes Students often recommend using tutoring and academic support before falling behind. Some students wait until they are already struggling, but earlier help is usually more effective. Tutoring can be useful for math, programming logic, and difficult CS concepts. The library is often described as a useful place for focused work. Students like using quiet areas when they need to complete programming assignments or study for exams. Group study rooms can also help when teams need to work on projects together. Students also mention that career resources are important but easy to ignore. Resume reviews, mock interviews, career fairs, and employer events can help students prepare before graduation."
+  },
+  {
+    "id": "utsa_campus_resources_1_1",
+    "source": "utsa_campus_resources_1.txt",
+    "chunk_index": 1,
+    "text": "Resume reviews, mock interviews, career fairs, and employer events can help students prepare before graduation. Many students recommend starting career preparation before senior year."
+  },
+  {
+    "id": "utsa_campus_resources_2_0",
+    "source": "utsa_campus_resources_2.txt",
+    "chunk_index": 0,
+    "text": "Source: Personal UTSA Career Resource Notes Students say career preparation should be treated like a long-term project. Applying to internships or entry-level roles takes time, and students often underestimate how many applications they need to send. A common recommendation is to keep a tracker for applications, contacts, interview dates, and follow-ups. Career fairs can be useful when students prepare ahead of time. Students recommend researching companies before attending, bringing a polished resume, and practicing a short introduction. It helps to mention specific interests like cloud computing, software engineering, cybersecurity, data, or DevOps. Students also recommend building projects that solve personal problems."
+  },
+  {
+    "id": "utsa_campus_resources_2_1",
+    "source": "utsa_campus_resources_2.txt",
+    "chunk_index": 1,
+    "text": "Students also recommend building projects that solve personal problems. A project is easier to explain when the student can describe why they built it, what problem it solved, what tools were used, and what they learned from debugging it."
+  },
+  {
+    "id": "utsa_cs_courses_1_0",
+    "source": "utsa_cs_courses_1.txt",
+    "chunk_index": 0,
+    "text": "Source: Personal UTSA CS Course Notes Students often describe the early CS courses as manageable if they build strong habits from the beginning. Intro programming courses usually feel easier when students practice outside of class instead of only watching lectures. A common piece of advice is to rewrite code examples by hand, test small changes, and understand why errors happen. Data structures is often described as a turning point because students move from basic syntax to problem solving. Students say linked lists, trees, recursion, stacks, and queues become much easier when they draw diagrams before coding. Many recommend starting assignments early because debugging pointer or reference logic can take longer than expected."
+  },
+  {
+    "id": "utsa_cs_courses_1_1",
+    "source": "utsa_cs_courses_1.txt",
+    "chunk_index": 1,
+    "text": "Many recommend starting assignments early because debugging pointer or reference logic can take longer than expected. Students also say upper-level CS classes require more independent learning. Professors may introduce a topic in lecture, but projects often require reading documentation, searching examples, and testing different approaches. The students who do best usually keep organized notes, attend office hours early, and avoid waiting until the deadline to ask questions."
+  },
+  {
+    "id": "utsa_cs_courses_2_0",
+    "source": "utsa_cs_courses_2.txt",
+    "chunk_index": 0,
+    "text": "Source: Personal UTSA CS Course Difficulty Notes Students often say software engineering classes are different from earlier programming classes because the focus shifts from writing code alone to building with a team. Group projects can be useful, but they can also become stressful if teammates communicate poorly or wait too long to contribute. Many students recommend using GitHub from the beginning and making small commits instead of trying to merge everything at the end. Systems-related courses are commonly described as challenging because they involve lower-level thinking. Students mention that memory, processes, threads, and operating system concepts can feel abstract until they connect them to actual code."
+  },
+  {
+    "id": "utsa_cs_courses_2_1",
+    "source": "utsa_cs_courses_2.txt",
+    "chunk_index": 1,
+    "text": "Students mention that memory, processes, threads, and operating system concepts can feel abstract until they connect them to actual code. Reviewing lecture slides, watching extra explanations, and drawing diagrams can help. Database courses are usually considered practical and useful. Students say SQL becomes easier with repetition, especially joins, grouping, normalization, and schema design. A common recommendation is to practice queries on small examples before trying to solve larger homework problems."
+  },
+  {
+    "id": "utsa_cs_professors_1_0",
+    "source": "utsa_cs_professors_1.txt",
+    "chunk_index": 0,
+    "text": "Source: Personal UTSA Professor Review Notes Students often say that a helpful CS professor is not always the easiest professor. Some of the most useful professors are described as strict but clear. Students appreciate when professors explain expectations early, provide examples, and make grading rubrics clear before projects are due. Students tend to value professors who connect assignments to real-world software development. When a professor explains why a concept matters outside the classroom, students are more likely to stay engaged. Examples involving cloud systems, web applications, databases, APIs, or cybersecurity are often easier for students to connect with career goals. A common complaint is when lectures move too quickly without enough examples."
+  },
+  {
+    "id": "utsa_cs_professors_1_1",
+    "source": "utsa_cs_professors_1.txt",
+    "chunk_index": 1,
+    "text": "A common complaint is when lectures move too quickly without enough examples. Students say they learn better when professors walk through code line by line and explain common mistakes. Review sessions before exams, posted slides, and practice problems are frequently mentioned as helpful."
+  },
+  {
+    "id": "utsa_cs_professors_2_0",
+    "source": "utsa_cs_professors_2.txt",
+    "chunk_index": 0,
+    "text": "Source: Personal UTSA Teaching Style Notes Students often prefer professors who are responsive to questions. Quick responses on email, Canvas, Discord, or discussion boards can make a major difference during programming assignments. Students say even a small hint can save hours of debugging when they are stuck. Office hours are often described as underused but valuable. Students who attend office hours early usually understand project requirements better and avoid last-minute confusion. A common recommendation is to bring specific questions, error messages, or code snippets instead of saying the whole assignment does not work. Students also mention that grading style matters. Clear feedback helps students improve, while vague feedback can make it hard to know what went wrong."
+  },
+  {
+    "id": "utsa_cs_professors_2_1",
+    "source": "utsa_cs_professors_2.txt",
+    "chunk_index": 1,
+    "text": "Clear feedback helps students improve, while vague feedback can make it hard to know what went wrong. Professors who explain why points were lost and how to improve future submissions are usually seen as more helpful."
+  },
+  {
+    "id": "utsa_internship_advice_1_0",
+    "source": "utsa_internship_advice_1.txt",
+    "chunk_index": 0,
+    "text": "Source: Personal UTSA Internship Preparation Notes Students recommend preparing for internships before applications open. A strong resume, LinkedIn profile, GitHub, and portfolio can make the process easier. Students say projects are especially important when they do not have much professional experience yet. Technical interview preparation is often described as stressful but manageable with consistency. Students suggest practicing arrays, strings, hash maps, recursion, and basic algorithms. It helps to explain the thought process out loud instead of silently jumping into code. Students also say behavioral interview stories matter. Good stories usually explain the situation, the task, the action taken, and the result."
+  },
+  {
+    "id": "utsa_internship_advice_1_1",
+    "source": "utsa_internship_advice_1.txt",
+    "chunk_index": 1,
+    "text": "Good stories usually explain the situation, the task, the action taken, and the result. Projects, group assignments, internships, debugging problems, and leadership experiences can all become useful interview examples."
+  },
+  {
+    "id": "utsa_new_student_advice_1_0",
+    "source": "utsa_new_student_advice_1.txt",
+    "chunk_index": 0,
+    "text": "Source: Personal UTSA New CS Student Advice New CS students are often told not to compare their progress too much with others. Some students enter college with years of coding experience, while others are learning for the first time. Students say improvement matters more than starting level. A common recommendation is to make friends in classes early. Having classmates to study with can make difficult assignments less isolating. Students often share reminders about deadlines, explain concepts to each other, and help debug small issues without giving away full solutions. Students also recommend asking questions even when they feel embarrassed. Many people are confused by the same topics, especially recursion, pointers, object-oriented programming, and algorithms."
+  },
+  {
+    "id": "utsa_new_student_advice_1_1",
+    "source": "utsa_new_student_advice_1.txt",
+    "chunk_index": 1,
+    "text": "Many people are confused by the same topics, especially recursion, pointers, object-oriented programming, and algorithms. Asking early prevents small misunderstandings from becoming bigger problems later."
+  },
+  {
+    "id": "utsa_new_student_advice_2_0",
+    "source": "utsa_new_student_advice_2.txt",
+    "chunk_index": 0,
+    "text": "Source: Personal UTSA Time Management Notes Students often say time management is one of the biggest challenges in CS. Programming assignments can look simple at first but take much longer because of debugging. A common rule is to start projects the day they are assigned, even if only to read the instructions and set up files. Students recommend breaking large assignments into smaller tasks. For example, first understand the input and output, then write helper functions, then test one feature at a time. This makes the work feel less overwhelming and helps identify bugs earlier. Many students also suggest protecting sleep before exams and major deadlines. Staying up all night can make it harder to think clearly during debugging or problem solving."
+  },
+  {
+    "id": "utsa_new_student_advice_2_1",
+    "source": "utsa_new_student_advice_2.txt",
+    "chunk_index": 1,
+    "text": "Staying up all night can make it harder to think clearly during debugging or problem solving. Consistent sleep, meals, and short breaks often lead to better performance."
+  },
+  {
+    "id": "utsa_study_advice_1_0",
+    "source": "utsa_study_advice_1.txt",
+    "chunk_index": 0,
+    "text": "Source: Personal UTSA CS Study Advice Students recommend treating CS classes like skill-building classes, not memorization classes. Reading about code is not enough. The most repeated advice is to write code often, break it, fix it, and explain it out loud. Students say they understand concepts better when they can build a small example without copying. For exams, students recommend reviewing lecture slides, homework problems, labs, and old coding exercises. Many students say exams are easier when they understand the patterns behind problems instead of memorizing exact answers. Practice problems are especially useful for recursion, data structures, algorithms, and SQL. Students also recommend studying in short daily sessions instead of one long cram session."
+  },
+  {
+    "id": "utsa_study_advice_1_1",
+    "source": "utsa_study_advice_1.txt",
+    "chunk_index": 1,
+    "text": "Students also recommend studying in short daily sessions instead of one long cram session. Debugging while tired can waste time and create frustration. A better approach is to study consistently, take breaks, and return to hard problems with a clearer mind."
+  },
+  {
+    "id": "utsa_study_advice_2_0",
+    "source": "utsa_study_advice_2.txt",
+    "chunk_index": 0,
+    "text": "Source: Personal UTSA Programming Practice Notes Students say the best way to improve in programming is to build small projects outside of class. Even simple projects can reinforce important skills like functions, APIs, databases, Git, testing, and deployment. Personal projects also help students explain their skills during interviews. Many students recommend learning Git early. Waiting until a group project to learn Git can make teamwork more stressful. Useful habits include making branches, writing clear commit messages, pulling often, and resolving conflicts carefully. Students also suggest keeping a debugging journal. When an error happens, write down the error message, what caused it, and how it was fixed."
+  },
+  {
+    "id": "utsa_study_advice_2_1",
+    "source": "utsa_study_advice_2.txt",
+    "chunk_index": 1,
+    "text": "When an error happens, write down the error message, what caused it, and how it was fixed. Over time, this creates a personal reference guide and helps students notice repeated mistakes."
+  }
+]
