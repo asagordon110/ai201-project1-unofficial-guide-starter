@@ -1,0 +1,7 @@
+Source: Personal UTSA Time Management Notes
+
+Students often say time management is one of the biggest challenges in CS. Programming assignments can look simple at first but take much longer because of debugging. A common rule is to start projects the day they are assigned, even if only to read the instructions and set up files.
+
+Students recommend breaking large assignments into smaller tasks. For example, first understand the input and output, then write helper functions, then test one feature at a time. This makes the work feel less overwhelming and helps identify bugs earlier.
+
+Many students also suggest protecting sleep before exams and major deadlines. Staying up all night can make it harder to think clearly during debugging or problem solving. Consistent sleep, meals, and short breaks often lead to better performance.

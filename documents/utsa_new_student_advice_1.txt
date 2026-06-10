@@ -1,0 +1,7 @@
+Source: Personal UTSA New CS Student Advice
+
+New CS students are often told not to compare their progress too much with others. Some students enter college with years of coding experience, while others are learning for the first time. Students say improvement matters more than starting level.
+
+A common recommendation is to make friends in classes early. Having classmates to study with can make difficult assignments less isolating. Students often share reminders about deadlines, explain concepts to each other, and help debug small issues without giving away full solutions.
+
+Students also recommend asking questions even when they feel embarrassed. Many people are confused by the same topics, especially recursion, pointers, object-oriented programming, and algorithms. Asking early prevents small misunderstandings from becoming bigger problems later.

@@ -1,0 +1,7 @@
+Source: Personal UTSA Teaching Style Notes
+
+Students often prefer professors who are responsive to questions. Quick responses on email, Canvas, Discord, or discussion boards can make a major difference during programming assignments. Students say even a small hint can save hours of debugging when they are stuck.
+
+Office hours are often described as underused but valuable. Students who attend office hours early usually understand project requirements better and avoid last-minute confusion. A common recommendation is to bring specific questions, error messages, or code snippets instead of saying the whole assignment does not work.
+
+Students also mention that grading style matters. Clear feedback helps students improve, while vague feedback can make it hard to know what went wrong. Professors who explain why points were lost and how to improve future submissions are usually seen as more helpful.

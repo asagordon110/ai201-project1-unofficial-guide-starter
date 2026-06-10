@@ -1,0 +1,7 @@
+Source: Personal UTSA Career Resource Notes
+
+Students say career preparation should be treated like a long-term project. Applying to internships or entry-level roles takes time, and students often underestimate how many applications they need to send. A common recommendation is to keep a tracker for applications, contacts, interview dates, and follow-ups.
+
+Career fairs can be useful when students prepare ahead of time. Students recommend researching companies before attending, bringing a polished resume, and practicing a short introduction. It helps to mention specific interests like cloud computing, software engineering, cybersecurity, data, or DevOps.
+
+Students also recommend building projects that solve personal problems. A project is easier to explain when the student can describe why they built it, what problem it solved, what tools were used, and what they learned from debugging it.

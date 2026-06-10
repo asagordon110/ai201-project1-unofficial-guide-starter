@@ -1,0 +1,7 @@
+Source: Personal UTSA CS Study Advice
+
+Students recommend treating CS classes like skill-building classes, not memorization classes. Reading about code is not enough. The most repeated advice is to write code often, break it, fix it, and explain it out loud. Students say they understand concepts better when they can build a small example without copying.
+
+For exams, students recommend reviewing lecture slides, homework problems, labs, and old coding exercises. Many students say exams are easier when they understand the patterns behind problems instead of memorizing exact answers. Practice problems are especially useful for recursion, data structures, algorithms, and SQL.
+
+Students also recommend studying in short daily sessions instead of one long cram session. Debugging while tired can waste time and create frustration. A better approach is to study consistently, take breaks, and return to hard problems with a clearer mind.

@@ -1,0 +1,7 @@
+Source: Personal UTSA Internship Preparation Notes
+
+Students recommend preparing for internships before applications open. A strong resume, LinkedIn profile, GitHub, and portfolio can make the process easier. Students say projects are especially important when they do not have much professional experience yet.
+
+Technical interview preparation is often described as stressful but manageable with consistency. Students suggest practicing arrays, strings, hash maps, recursion, and basic algorithms. It helps to explain the thought process out loud instead of silently jumping into code.
+
+Students also say behavioral interview stories matter. Good stories usually explain the situation, the task, the action taken, and the result. Projects, group assignments, internships, debugging problems, and leadership experiences can all become useful interview examples.

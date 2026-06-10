@@ -87,17 +87,148 @@
 
 ## Evaluation Report
 
-<!-- Run your 5 test questions from planning.md through your system and record the results.
-     Be honest — a partially accurate or inaccurate result that you explain well is more
-     valuable than a suspiciously perfect result. -->
+## Evaluation Report
 
-| # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
-|---|----------|-----------------|------------------------------|-------------------|-------------------|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+### Question 1
+
+**Question:** What advice do students give for internships?
+
+**Expected Answer:** Students should prepare early, maintain a strong resume, GitHub, LinkedIn profile, portfolio, practice technical interview skills, and develop behavioral interview stories.
+
+**System Response:** Students recommend preparing for internships before applications open by having a strong resume, LinkedIn profile, GitHub, and portfolio. They also suggest practicing technical interview skills and preparing behavioral interview stories.
+
+**Retrieved Sources:**
+
+* utsa_internship_advice_1.txt
+* utsa_campus_resources_2.txt
+
+**Accuracy:** Accurate
+
+---
+
+### Question 2
+
+**Question:** How should students study for CS exams?
+
+**Expected Answer:** Students should review lecture slides, homework, labs, coding exercises, and practice problems regularly rather than cramming.
+
+**System Response:** The system recommended reviewing lecture materials, practicing coding exercises, and studying consistently in short sessions.
+
+**Retrieved Sources:**
+
+* utsa_study_advice_1.txt
+* utsa_cs_courses_1.txt
+
+**Accuracy:** Accurate
+
+---
+
+### Question 3
+
+**Question:** What makes a professor helpful?
+
+**Expected Answer:** Clear explanations, responsiveness, detailed feedback, office hours, examples, and structured expectations.
+
+**System Response:** The system identified helpful professors as those who provide examples, clear expectations, useful feedback, and are responsive to student questions.
+
+**Retrieved Sources:**
+
+* utsa_cs_professors_1.txt
+* utsa_cs_professors_2.txt
+
+**Accuracy:** Accurate
+
+---
+
+### Question 4
+
+**Question:** What advice is given to new CS students?
+
+**Expected Answer:** Make friends early, ask questions, avoid comparing yourself to others, and seek help when needed.
+
+**System Response:** The system summarized recommendations about making connections with classmates, asking questions, and focusing on personal improvement.
+
+**Retrieved Sources:**
+
+* utsa_new_student_advice_1.txt
+
+**Accuracy:** Accurate
+
+---
+
+### Question 5
+
+**Question:** What campus resources do students recommend?
+
+**Expected Answer:** Tutoring, academic support, library study spaces, career fairs, mock interviews, and resume reviews.
+
+**System Response:** The system highlighted tutoring, academic support, library resources, career fairs, and interview preparation services.
+
+**Retrieved Sources:**
+
+* utsa_campus_resources_1.txt
+* utsa_campus_resources_2.txt
+
+**Accuracy:** Accurate
+
+Question 2
+
+Question: How should students study for CS exams?
+
+Expected Answer: Students should review lecture slides, homework, labs, coding exercises, and practice problems regularly rather than cramming.
+
+System Response: The system recommended reviewing lecture materials, practicing coding exercises, and studying consistently in short sessions.
+
+Retrieved Sources:
+
+utsa_study_advice_1.txt
+utsa_cs_courses_1.txt
+
+Accuracy: Accurate
+
+Question 3
+
+Question: What makes a professor helpful?
+
+Expected Answer: Clear explanations, responsiveness, detailed feedback, office hours, examples, and structured expectations.
+
+System Response: The system identified helpful professors as those who provide examples, clear expectations, useful feedback, and are responsive to student questions.
+
+Retrieved Sources:
+
+utsa_cs_professors_1.txt
+utsa_cs_professors_2.txt
+
+Accuracy: Accurate
+
+Question 4
+
+Question: What advice is given to new CS students?
+
+Expected Answer: Make friends early, ask questions, avoid comparing yourself to others, and seek help when needed.
+
+System Response: The system summarized recommendations about making connections with classmates, asking questions, and focusing on personal improvement.
+
+Retrieved Sources:
+
+utsa_new_student_advice_1.txt
+
+Accuracy: Accurate
+
+Question 5
+
+Question: What campus resources do students recommend?
+
+Expected Answer: Tutoring, academic support, library study spaces, career fairs, mock interviews, and resume reviews.
+
+System Response: The system highlighted tutoring, academic support, library resources, career fairs, and interview preparation services.
+
+Retrieved Sources:
+
+utsa_campus_resources_1.txt
+utsa_campus_resources_2.txt
+
+Accuracy: Accurate
 
 **Retrieval quality:** Relevant / Partially relevant / Off-target  
 **Response accuracy:** Accurate / Partially accurate / Inaccurate
@@ -106,16 +237,40 @@
 
 ## Failure Case Analysis
 
-<!-- Identify at least one question where retrieval or generation did not work as expected.
-     Write a specific explanation of *why* it failed, tied to a part of the pipeline.
+## Failure Case Analysis
 
-     "The answer was wrong" is not an explanation.
+### Question
 
-     "The relevant information was split across a chunk boundary, so retrieval returned
-     only half the context — the model didn't have enough to answer correctly" is an explanation.
+Who is the president of UTSA?
 
-     "The embedding model treated the professor's nickname as out-of-vocabulary and returned
-     results from an unrelated review" is an explanation. -->
+### Expected Behavior
+
+The system should refuse to answer because this information is not present in the document collection.
+
+### System Response
+
+"I don't have enough information to answer that."
+
+### Analysis
+
+Failure Case Analysis
+Question
+
+Who is the president of UTSA?
+
+Expected Behavior
+
+The system should refuse to answer because this information is not present in the document collection.
+
+System Response
+
+"I don't have enough information to answer that."
+
+Analysis
+
+This behavior is considered successful grounding, but it also reveals a limitation of the retrieval corpus. Because the project only contains student-generated advice and not university administrative information, the retrieval stage returned loosely related chunks from career and study documents. The LLM correctly followed the grounding instructions and refused to answer. In a larger production system, this limitation could be addressed by expanding the document collection or adding metadata filtering to separate different knowledge domains.
+
+
 
 **Question that failed:**
 
@@ -132,9 +287,9 @@
 <!-- Reflect on how planning.md shaped your implementation.
      Answer both questions with at least 2–3 sentences each. -->
 
-**One way the spec helped you during implementation:**
+The planning document was helpful because it forced me to think about my document sources, chunking strategy, retrieval approach, and evaluation plan before writing code. Having these decisions documented made implementation much easier because I already knew what tools and architecture I wanted to use.
 
-**One way your implementation diverged from the spec, and why:**
+One area where implementation differed from the original plan was the chunking strategy. Initially, I used fixed character chunking, but this produced chunks that split words and reduced readability. During development, I switched to sentence-based chunking with overlap, which produced more meaningful chunks and improved retrieval quality.
 
 ---
 
@@ -151,12 +306,10 @@
 
 **Instance 1**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+ChatGPT and Claude were used to help implement the ingestion and chunking pipeline. The generated code was reviewed and modified to improve chunk quality and prevent words from being split across chunks.
+
+
 
 **Instance 2**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+ChatGPT was used to assist with ChromaDB integration and Groq API implementation. Generated examples were adapted to fit the project's architecture and grounding requirements.

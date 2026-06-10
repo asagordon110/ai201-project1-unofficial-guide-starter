@@ -1,0 +1,7 @@
+Source: Personal UTSA Programming Practice Notes
+
+Students say the best way to improve in programming is to build small projects outside of class. Even simple projects can reinforce important skills like functions, APIs, databases, Git, testing, and deployment. Personal projects also help students explain their skills during interviews.
+
+Many students recommend learning Git early. Waiting until a group project to learn Git can make teamwork more stressful. Useful habits include making branches, writing clear commit messages, pulling often, and resolving conflicts carefully.
+
+Students also suggest keeping a debugging journal. When an error happens, write down the error message, what caused it, and how it was fixed. Over time, this creates a personal reference guide and helps students notice repeated mistakes.

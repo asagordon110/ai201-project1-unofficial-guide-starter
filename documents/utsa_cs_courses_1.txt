@@ -1,0 +1,7 @@
+Source: Personal UTSA CS Course Notes
+
+Students often describe the early CS courses as manageable if they build strong habits from the beginning. Intro programming courses usually feel easier when students practice outside of class instead of only watching lectures. A common piece of advice is to rewrite code examples by hand, test small changes, and understand why errors happen.
+
+Data structures is often described as a turning point because students move from basic syntax to problem solving. Students say linked lists, trees, recursion, stacks, and queues become much easier when they draw diagrams before coding. Many recommend starting assignments early because debugging pointer or reference logic can take longer than expected.
+
+Students also say upper-level CS classes require more independent learning. Professors may introduce a topic in lecture, but projects often require reading documentation, searching examples, and testing different approaches. The students who do best usually keep organized notes, attend office hours early, and avoid waiting until the deadline to ask questions.

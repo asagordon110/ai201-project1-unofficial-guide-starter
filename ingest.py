@@ -6,7 +6,7 @@ DOCUMENTS_DIR = Path("documents")
 OUTPUT_FILE = Path("chunks.json")
 
 CHUNK_SIZE = 800
-OVERLAP = 100
+OVERLAP = 1
 
 
 def clean_text(text):
@@ -17,18 +17,38 @@ def clean_text(text):
     return text.strip()
 
 
-def chunk_text(text, chunk_size=CHUNK_SIZE, overlap=OVERLAP):
+def chunk_text(text, chunk_size=800, overlap_sentences=1):
     chunks = []
-    start = 0
 
-    while start < len(text):
-        end = start + chunk_size
-        chunk = text[start:end].strip()
+    sentences = re.split(r'(?<=[.!?])\s+', text)
+    current_sentences = []
+    current_length = 0
 
-        if len(chunk) > 50:
-            chunks.append(chunk)
+    for sentence in sentences:
+        sentence = sentence.strip()
 
-        start += chunk_size - overlap
+        if not sentence:
+            continue
+
+        sentence_length = len(sentence)
+
+        if current_length + sentence_length <= chunk_size:
+            current_sentences.append(sentence)
+            current_length += sentence_length
+        else:
+            chunk = " ".join(current_sentences).strip()
+
+            if len(chunk) > 50:
+                chunks.append(chunk)
+
+            current_sentences = current_sentences[-overlap_sentences:] if current_sentences else []
+            current_sentences.append(sentence)
+            current_length = sum(len(s) for s in current_sentences)
+
+    final_chunk = " ".join(current_sentences).strip()
+
+    if len(final_chunk) > 50:
+        chunks.append(final_chunk)
 
     return chunks
 
@@ -39,7 +59,7 @@ def load_documents():
     for file_path in DOCUMENTS_DIR.glob("*.txt"):
         raw_text = file_path.read_text(encoding="utf-8")
         cleaned = clean_text(raw_text)
-        chunks = chunk_text(cleaned)
+        chunks = chunk_text(cleaned, CHUNK_SIZE, OVERLAP)
 
         for i, chunk in enumerate(chunks):
             all_chunks.append({

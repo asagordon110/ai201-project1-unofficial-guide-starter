@@ -1,0 +1,7 @@
+Source: Personal UTSA Professor Review Notes
+
+Students often say that a helpful CS professor is not always the easiest professor. Some of the most useful professors are described as strict but clear. Students appreciate when professors explain expectations early, provide examples, and make grading rubrics clear before projects are due.
+
+Students tend to value professors who connect assignments to real-world software development. When a professor explains why a concept matters outside the classroom, students are more likely to stay engaged. Examples involving cloud systems, web applications, databases, APIs, or cybersecurity are often easier for students to connect with career goals.
+
+A common complaint is when lectures move too quickly without enough examples. Students say they learn better when professors walk through code line by line and explain common mistakes. Review sessions before exams, posted slides, and practice problems are frequently mentioned as helpful.
