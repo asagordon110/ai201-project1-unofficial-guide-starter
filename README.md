@@ -87,8 +87,6 @@
 
 ## Evaluation Report
 
-## Evaluation Report
-
 ### Question 1
 
 **Question:** What advice do students give for internships?
